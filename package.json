@@ -9,7 +9,8 @@
     "build:gh-pages": "cross-env GITHUB_PAGES=true vite build",
     "preview": "vite preview",
     "lint": "oxlint",
-    "deploy": "npm run build:gh-pages && gh-pages -d dist"
+    "deploy": "npm run build:gh-pages && gh-pages -d dist",
+    "generate:pdf": "node scripts/generate-pdf.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.22.0",
@@ -24,6 +25,7 @@
     "cross-env": "^10.1.0",
     "gh-pages": "^6.3.0",
     "oxlint": "^1.69.0",
+    "puppeteer": "^25.2.1",
     "tailwindcss": "^4.3.2",
     "vite": "^8.1.0"
   }

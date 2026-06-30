@@ -51,3 +51,55 @@ body {
     var(--color-accent-cyan) 100%
   );
 }
+
+@media print {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  header {
+    position: static !important;
+    backdrop-filter: none !important;
+  }
+
+  header button {
+    display: none !important;
+  }
+
+  section {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  article {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  .section-surface,
+  .section-surface-alt {
+    background: #ffffff !important;
+  }
+
+  .text-gradient {
+    background: none !important;
+    color: #1f3a5f !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+  }
+
+  #home .pointer-events-none {
+    display: none !important;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}
