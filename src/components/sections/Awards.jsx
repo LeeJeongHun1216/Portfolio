@@ -7,7 +7,7 @@ export default function Awards() {
   return (
     <section id="awards" className="section-surface-alt py-16 md:py-20">
       <div className="mx-auto max-w-5xl px-5 md:px-8">
-        <SectionHeader title="Awards" subtitle="수상 경력" />
+        <SectionHeader title="Awards" subtitle="교내 수상 경력" />
 
         <div className="grid gap-6 md:grid-cols-2">
           {awards.map((award, index) => {
