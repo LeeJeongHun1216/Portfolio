@@ -136,6 +136,23 @@ export const projects = [
     image: "/images/project-3.png",
     imageAlt: "SafeMetro 부산 프로젝트 캡처",
   },
+  {
+    id: 4,
+    title: "창원 공공 Wi-Fi Map",
+    purpose: "창원시 AI 데이터 활용 공모전에 출품하기 위한 작품",
+    description:
+      "창원시 공공 Wi-Fi 위치를 지도에서 확인하고, 통신사별 현황 및 AI 안내를 제공하는 웹 서비스 제작",
+    utilization: ["공공데이터 활용", "AI 기반 서비스 아이디어 구현"],
+    development: [
+      "Cursor AI 활용 개발",
+      "AI 도구를 활용한 웹 서비스 구현 및 프로토타이핑",
+    ],
+    responsibilities: ["서비스 기획", "데이터 활용", "웹 서비스 구현"],
+    keywords: ["Public Data", "Map Service", "AI Service"],
+    url: "https://changwon-wifi-map.vercel.app/",
+    image: "/images/project-4.jpg",
+    imageAlt: "창원 공공 Wi-Fi Map 프로젝트 캡처",
+  },
 ];
 
 export const careerGoal =
