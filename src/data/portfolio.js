@@ -87,71 +87,17 @@ export const awards = [
 
 export const projects = [
   {
-    id: 1,
-    title: "부산 문화/예술행사 모바일 반응형 웹페이지",
-    purpose:
-      "교내 RISE FAIR 캡스톤디자인 경진대회 출품을 위해 제작한 프로젝트",
-    description:
-      "부산 지역 문화 및 예술 행사 정보를 제공하는 모바일 반응형 웹페이지 제작",
-    development: [
-      "Cursor AI 활용 개발",
-      "AI 도구를 활용한 웹 서비스 구현 및 프로토타이핑",
-    ],
-    responsibilities: ["서비스 기획", "웹페이지 구현", "기능 구성"],
-    keywords: ["Responsive Web", "Web Development", "AI Tool 활용"],
-    url: "https://leejeonghun1216.github.io/Busan/",
-    image: "/images/project-1.png",
-    imageAlt: "부산 문화/예술행사 모바일 반응형 웹페이지 캡처",
-  },
-  {
-    id: 2,
-    title: "전국 공용자전거 통합 정보 웹 서비스",
-    purpose: "전국 통합데이터 공모전 제출을 위해 제작한 프로젝트",
-    description:
-      "전국 공용자전거 관련 데이터를 활용하여 정보를 제공하는 웹 서비스 제작",
-    development: [
-      "Cursor AI 활용 개발",
-      "AI 도구를 활용한 웹 서비스 구현 및 프로토타이핑",
-    ],
-    responsibilities: ["서비스 기획", "데이터 활용", "웹 서비스 구현"],
-    keywords: ["Public Data", "Data Utilization", "Web Service"],
-    url: "https://public-bike-web.vercel.app/",
-    image: "/images/project-2.png",
-    imageAlt: "전국 공용자전거 통합 정보 웹 서비스 캡처",
-  },
-  {
-    id: 3,
-    title: "SafeMetro 부산",
-    purpose: "공공데이터 AI 활용 창업경진대회 출품을 위해 제작한 프로젝트",
-    description:
-      "부산 지하철 이용자의 접근성을 고려한 정보 제공 및 경로 안내 서비스",
-    utilization: ["공공데이터 활용", "AI 기반 서비스 아이디어 구현"],
-    development: [
-      "Cursor AI 활용 개발",
-      "AI 도구를 활용한 웹 서비스 구현 및 프로토타이핑",
-    ],
-    responsibilities: ["서비스 기획", "기능 설계", "웹 서비스 구현"],
-    keywords: ["Public Data", "AI Service", "Accessibility"],
-    url: "https://safemetro-busan.vercel.app/",
-    image: "/images/project-3.png",
-    imageAlt: "SafeMetro 부산 프로젝트 캡처",
-  },
-  {
-    id: 4,
-    title: "창원 공공 Wi-Fi Map",
-    purpose: "창원시 AI 데이터 활용 공모전에 출품하기 위한 작품",
-    description:
-      "창원시 공공 Wi-Fi 위치를 지도에서 확인하고, 통신사별 현황 및 AI 안내를 제공하는 웹 서비스 제작",
-    utilization: ["공공데이터 활용", "AI 기반 서비스 아이디어 구현"],
-    development: [
-      "Cursor AI 활용 개발",
-      "AI 도구를 활용한 웹 서비스 구현 및 프로토타이핑",
-    ],
-    responsibilities: ["서비스 기획", "데이터 활용", "웹 서비스 구현"],
-    keywords: ["Public Data", "Map Service", "AI Service"],
-    url: "https://changwon-wifi-map.vercel.app/",
-    image: "/images/project-4.jpg",
-    imageAlt: "창원 공공 Wi-Fi Map 프로젝트 캡처",
+    id: 5,
+    title: "MyCloud",
+    subtitle: "Raspberry Pi 기반 개인 클라우드 서버 구축 및 운영",
+    version: "V1.1",
+    type: "개인 프로젝트",
+    purpose: "서비스 개발부터 물리 서버 환경 구성, 배포, 운영 및 유지보수까지 직접 경험하기 위해 진행한 개인 프로젝트",
+    description: "Raspberry Pi 5를 기반으로 개인 클라우드 서버를 구축하고, 웹 환경에서 파일을 관리하고 공유할 수 있도록 개발하였습니다. AI 기반 바이브코딩을 활용해 기능을 개발하고 개선하며 실제 물리 서버에서 서비스를 배포하고 테스트하였습니다.",
+    utilization: ["Raspberry Pi 5 기반 개인 클라우드 서버 구축", "Linux 기반 서버 환경 구성 및 관리", "웹 기반 파일 관리 및 파일 공유 링크 기능", "서버 장애 및 접속 불가 시 안내 페이지", "네온 오로라(Neon Aurora) 기반 UI 및 공유 링크 페이지 네온사인 디자인"],
+    development: ["AI 기반 바이브코딩을 활용한 기능 개발 및 개선", "React · TypeScript · Vite 기반 프런트엔드", "FastAPI 기반 API 및 SQLite 기반 메타데이터 관리"],
+    responsibilities: ["물리 서버 환경 구성 및 서비스 배포·테스트", "Linux 서버 관리 및 서비스 운영", "서비스 버전 관리 및 유지보수"],
+    keywords: ["Raspberry Pi 5", "Linux", "React", "TypeScript", "FastAPI", "SQLite", "Server Operation"],
   },
 ];
 

@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { Cloud, ExternalLink } from "lucide-react";
 import { projects } from "../../data/portfolio";
 import SectionHeader from "../ui/SectionHeader";
 import Card from "../ui/Card";
@@ -33,7 +33,7 @@ export default function Projects() {
             <Card key={project.id}>
               <div className="grid gap-6 lg:grid-cols-5">
                 <div className="lg:col-span-2">
-                  <a
+                  {project.image ? <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -44,16 +44,21 @@ export default function Projects() {
                       alt={project.imageAlt}
                       projectNumber={project.id}
                     />
-                  </a>
+                  </a> : <div className="flex aspect-video flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 bg-gray-50 px-5 text-center">
+                      <Cloud className="h-12 w-12 text-brand-blue" strokeWidth={1.5} />
+                      <p className="text-lg font-bold text-navy">MyCloud {project.version}</p>
+                      <p className="text-sm text-gray-600">Raspberry Pi 5 · Linux</p>
+                    </div>}
                 </div>
 
                 <div className="lg:col-span-3">
                   <p className="text-xs font-semibold uppercase tracking-wide text-brand-blue">
-                    Project {String(project.id).padStart(2, "0")}
+                    {project.type} · {project.version}
                   </p>
                   <h3 className="mt-1 text-lg font-bold text-navy md:text-xl">
                     {project.title}
                   </h3>
+                  <p className="mt-2 text-sm text-gray-600 md:text-base">{project.subtitle}</p>
 
                   <div className="mt-5 space-y-4">
                     <div>
@@ -75,13 +80,13 @@ export default function Projects() {
                     </div>
 
                     {project.utilization && (
-                      <ProjectDetail label="활용" items={project.utilization} />
+                      <ProjectDetail label="주요 구현 및 운영" items={project.utilization} />
                     )}
 
                     <ProjectDetail label="개발 방식" items={project.development} />
                     <ProjectDetail label="담당" items={project.responsibilities} />
 
-                    <div>
+                    {project.url && <div>
                       <h4 className="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500">
                         링크
                       </h4>
@@ -94,7 +99,7 @@ export default function Projects() {
                         <ExternalLink className="h-3.5 w-3.5 shrink-0" />
                         {project.url}
                       </a>
-                    </div>
+                    </div>}
                   </div>
 
                   <div className="mt-5">
